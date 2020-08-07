@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button button_Registro;
-    private Button button_Registro2;
+    private Button button_Ingreso;
 
 
     @Override
@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         button_Registro = (Button) findViewById(R.id.button_Registro);
         button_Registro.setOnClickListener(onClickListener);
 
+        button_Ingreso = (Button) findViewById(R.id.button_Ingreso);
+        button_Ingreso.setOnClickListener(onClickListener);
+
     }
 
     private View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -29,11 +32,20 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             if (v == button_Registro)
                 button_Registro_OnClick();
+
+            if (v == button_Ingreso)
+                button_Ingreso_OnClick();
         }
     };
 
+
     private void button_Registro_OnClick() {
         Intent intent = new Intent(MainActivity.this, Registro.class);
+        startActivity(intent);
+    }
+
+    private void button_Ingreso_OnClick() {
+        Intent intent = new Intent(MainActivity.this, Configuracion_Cuenta.class);
         startActivity(intent);
     }
 }
