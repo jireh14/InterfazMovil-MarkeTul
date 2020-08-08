@@ -2,12 +2,11 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageButton
-        android:id="@+id/imageButtonMenu_Config2"
+        android:id="@+id/imageButtonMenu_Config3"
         style="@android:style/Widget.ImageButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -23,13 +22,13 @@
         app:srcCompat="@drawable/confi" />
 
     <ImageButton
-        android:id="@+id/imageButtonMenu_Vendedor"
+        android:id="@+id/imageButtonMenu_Vendedor2"
         style="@android:style/Widget.ImageButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/vendedor__2_"
+        android:background="@drawable/ventas__1_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.196"
@@ -39,7 +38,7 @@
         app:srcCompat="@drawable/confi" />
 
     <ImageButton
-        android:id="@+id/imageButtonMenu_Cerrar2"
+        android:id="@+id/imageButtonMenu_Cerrar3"
         style="@android:style/Widget.ImageButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -54,7 +53,7 @@
         app:layout_constraintVertical_bias="0.979" />
 
     <View
-        android:id="@+id/divider2"
+        android:id="@+id/divider3"
         android:layout_width="468dp"
         android:layout_height="2dp"
         android:layout_marginTop="8dp"
@@ -68,7 +67,8 @@
         app:layout_constraintVertical_bias="0.901" />
 
     <TextView
-        android:id="@+id/textViewMenu_Config2"
+        android:id="@+id/textViewMenu_Config3"
+        tools:text="Configuración"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -84,31 +84,31 @@
         app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView_ConfigCuenta"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="Configuración" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textViewMenu_Vendedor"
+        android:id="@+id/textViewMenu_Ventas"
+        tools:text="Vendedores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
-        android:text="Vendedores"
+        android:text="Ventas"
         android:textColor="@color/cardview_dark_background"
         android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView_ConfigCuenta"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="Vendedores" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textViewMenu_Cerrar2"
+        android:id="@+id/textViewMenu_Cerrar3"
+        tools:text="Cerrar sesión"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -124,11 +124,10 @@
         app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView_ConfigCuenta"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="Cerrar sesión" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editText_Nombre"
+        android:id="@+id/editText_Nombre2"
         android:layout_width="278dp"
         android:layout_height="41dp"
         android:ems="10"
@@ -142,7 +141,7 @@
         app:layout_constraintVertical_bias="0.136" />
 
     <EditText
-        android:id="@+id/editText_Direccion"
+        android:id="@+id/editText_Direccion2"
         android:layout_width="278dp"
         android:layout_height="41dp"
         android:layout_marginTop="152dp"
@@ -155,7 +154,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText_Teléfono"
+        android:id="@+id/editText_Teléfono2"
         android:layout_width="278dp"
         android:layout_height="41dp"
         android:layout_marginTop="208dp"
@@ -168,7 +167,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText_Email"
+        android:id="@+id/editText_Email2"
         android:layout_width="278dp"
         android:layout_height="41dp"
         android:layout_marginTop="264dp"
@@ -181,7 +180,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextTextPassword3"
         android:layout_width="278dp"
         android:layout_height="41dp"
         android:ems="10"
@@ -194,7 +193,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/editTextTextPassword4"
         android:layout_width="278dp"
         android:layout_height="41dp"
         android:ems="10"
@@ -208,7 +207,7 @@
         app:layout_constraintVertical_bias="0.614" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="316dp"
@@ -219,7 +218,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="396dp"
@@ -230,7 +229,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button3"
         android:layout_width="278dp"
         android:layout_height="40dp"
         android:layout_marginTop="544dp"
@@ -244,7 +243,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button4"
         android:layout_width="278dp"
         android:layout_height="40dp"
         android:layout_marginTop="492dp"
@@ -258,7 +257,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -269,5 +268,4 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </android.support.constraint.ConstraintLayout>
