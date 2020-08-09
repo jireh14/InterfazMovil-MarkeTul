@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Configuracion_Cuenta"></activity>
+        <activity android:name=".Proceso_Pago"></activity>
+        <activity android:name=".Direccion_Envio" />
+        <activity android:name=".Carrito_Compras" />
+        <activity android:name=".Lista_Catalogos" />
+        <activity android:name=".Configuracion_Cuenta" />
         <activity android:name=".Categorias" />
         <activity android:name=".Registro" />
         <activity

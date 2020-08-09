@@ -4,14 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-public class Configuracion_Cuenta extends AppCompatActivity {
-    private Button button_ConfigGuardar;
-    private Button button_ConfigCancelar;
-    private Button imageButton_Back;
-
+public class Proceso_Pago extends AppCompatActivity {
     private ImageButton imageButtonMenu_Config;
     private ImageButton imageButtonMenu_Compras;
     private ImageButton imageButtonMenu_Direccion;
@@ -21,7 +16,7 @@ public class Configuracion_Cuenta extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_configuracion__cuenta);
+        setContentView(R.layout.activity_proceso__pago);
 
         imageButtonMenu_Config = (ImageButton) findViewById(R.id.imageButtonMenu_Config);
         imageButtonMenu_Config.setOnClickListener(onClickListener);
@@ -38,7 +33,6 @@ public class Configuracion_Cuenta extends AppCompatActivity {
         imageButtonMenu_Cerrar = (ImageButton) findViewById(R.id.imageButtonMenu_Cerrar);
         imageButtonMenu_Cerrar.setOnClickListener(onClickListener);
     }
-
     private View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -60,27 +54,27 @@ public class Configuracion_Cuenta extends AppCompatActivity {
     };
 
     private void imageButtonMenu_Config_OnClick() {
-        Intent intent = new Intent(Configuracion_Cuenta.this, Configuracion_Cuenta.class);
+        Intent intent = new Intent(Proceso_Pago.this, Configuracion_Cuenta.class);
         startActivity(intent);
     }
 
     private void imageButtonMenu_Compras_OnClick() {
-        Intent intent = new Intent(Configuracion_Cuenta.this, Carrito_Compras.class);
+        Intent intent = new Intent(Proceso_Pago.this, Carrito_Compras.class);
         startActivity(intent);
     }
 
     private void imageButtonMenu_Direccion_OnClick() {
-        Intent intent = new Intent(Configuracion_Cuenta.this, Direccion_Envio.class);
+        Intent intent = new Intent(Proceso_Pago.this, Direccion_Envio.class);
         startActivity(intent);
     }
 
     private void imageButtonMenu_Pago_OnClick() {
-        Intent intent = new Intent(Configuracion_Cuenta.this, Proceso_Pago.class);
+        Intent intent = new Intent(Proceso_Pago.this, Proceso_Pago.class);
         startActivity(intent);
     }
 
     private void imageButtonMenu_Cerrar_OnClick() {
-        Intent intent = new Intent(Configuracion_Cuenta.this, Configuracion_Cuenta.class);
+        Intent intent = new Intent(Proceso_Pago.this, Configuracion_Cuenta.class);
         startActivity(intent);
     }
 }

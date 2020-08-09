@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class Configuracion_Cuenta extends AppCompatActivity {
+public class Carrito_Compras extends AppCompatActivity {
     private Button button_ConfigGuardar;
     private Button button_ConfigCancelar;
     private Button imageButton_Back;
@@ -21,7 +21,7 @@ public class Configuracion_Cuenta extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_configuracion__cuenta);
+        setContentView(R.layout.activity_carrito__compras);
 
         imageButtonMenu_Config = (ImageButton) findViewById(R.id.imageButtonMenu_Config);
         imageButtonMenu_Config.setOnClickListener(onClickListener);
@@ -60,27 +60,28 @@ public class Configuracion_Cuenta extends AppCompatActivity {
     };
 
     private void imageButtonMenu_Config_OnClick() {
-        Intent intent = new Intent(Configuracion_Cuenta.this, Configuracion_Cuenta.class);
+        Intent intent = new Intent(Carrito_Compras.this, Configuracion_Cuenta.class);
         startActivity(intent);
     }
 
     private void imageButtonMenu_Compras_OnClick() {
-        Intent intent = new Intent(Configuracion_Cuenta.this, Carrito_Compras.class);
+        Intent intent = new Intent(Carrito_Compras.this, Carrito_Compras.class);
         startActivity(intent);
     }
 
     private void imageButtonMenu_Direccion_OnClick() {
-        Intent intent = new Intent(Configuracion_Cuenta.this, Direccion_Envio.class);
+        Intent intent = new Intent(Carrito_Compras.this, Direccion_Envio.class);
         startActivity(intent);
     }
 
     private void imageButtonMenu_Pago_OnClick() {
-        Intent intent = new Intent(Configuracion_Cuenta.this, Proceso_Pago.class);
+        Intent intent = new Intent(Carrito_Compras.this, Proceso_Pago.class);
         startActivity(intent);
     }
 
     private void imageButtonMenu_Cerrar_OnClick() {
-        Intent intent = new Intent(Configuracion_Cuenta.this, Configuracion_Cuenta.class);
+        Intent intent = new Intent(Carrito_Compras.this, Configuracion_Cuenta.class);
         startActivity(intent);
     }
+
 }
