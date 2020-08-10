@@ -4,10 +4,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".AdminMotivoRechazo">
+
+    <ImageButton
+        android:id="@+id/imageButton_Back6"
+        style="@android:style/Widget.ImageButton"
+        android:layout_width="25dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button_Cancelar"
         android:layout_width="131dp"
         android:layout_height="38dp"
         android:layout_marginTop="380dp"
@@ -21,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button_Enviar"
         android:layout_width="131dp"
         android:layout_height="38dp"
         android:layout_marginTop="380dp"
@@ -35,7 +51,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButtonMenu_Config5"
+        android:id="@+id/imageButtonMenu_Config4"
         style="@android:style/Widget.ImageButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -51,7 +67,7 @@
         app:srcCompat="@drawable/confi" />
 
     <ImageButton
-        android:id="@+id/imageButtonMenu_Vendedor4"
+        android:id="@+id/imageButtonMenu_Vendedores4"
         style="@android:style/Widget.ImageButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -67,7 +83,7 @@
         app:srcCompat="@drawable/confi" />
 
     <ImageButton
-        android:id="@+id/imageButtonMenu_Cerrar5"
+        android:id="@+id/imageButtonMenu_Cerrar4"
         style="@android:style/Widget.ImageButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -190,20 +206,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Motivo de Rechazo" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="216dp"
-        android:text="Descripción"
+        android:text="Descripcion"
         android:textColor="@color/cardview_dark_background"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Descripción" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine3"

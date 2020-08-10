@@ -4,7 +4,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".AdminDetalleSolicitud">
+
+    <ImageButton
+        android:id="@+id/imageButton_Back7"
+        style="@android:style/Widget.ImageButton"
+        android:layout_width="25dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
 
     <View
         android:id="@+id/view2"
@@ -92,7 +108,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Juan" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -104,7 +121,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Francisco I madero" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
@@ -116,7 +134,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="juan@gmail.com" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
@@ -128,7 +147,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="44" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
@@ -140,7 +160,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Maculino" />
 
     <EditText
         android:id="@+id/editTextTextPersonName7"
@@ -152,7 +173,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="pagar mis estudios " />
 
     <TextView
         android:id="@+id/textView10"
@@ -169,7 +191,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/button_Cancelar"
         android:layout_width="131dp"
         android:layout_height="38dp"
         android:layout_marginTop="544dp"
@@ -197,7 +219,7 @@
         tools:text="Solicitud de Vendedor" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button_Aceptar"
         android:layout_width="131dp"
         android:layout_height="38dp"
         android:layout_marginTop="544dp"
@@ -227,7 +249,7 @@
         app:srcCompat="@drawable/confi" />
 
     <ImageButton
-        android:id="@+id/imageButtonMenu_Vendedor5"
+        android:id="@+id/imageButtonMenu_Vendedores5"
         style="@android:style/Widget.ImageButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
