@@ -40,19 +40,6 @@
         app:srcCompat="@drawable/confi" />
 
     <ImageButton
-        style="@android:style/Widget.ImageButton"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/vendedor__2_"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.983"
-        app:srcCompat="@drawable/confi" />
-
-    <ImageButton
         android:id="@+id/imageButtonMenu_Cerrar2"
         style="@android:style/Widget.ImageButton"
         android:layout_width="40dp"
