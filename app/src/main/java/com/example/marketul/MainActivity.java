@@ -11,6 +11,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button button_Registro;
     private Button button_Ingreso;
+    private Button button_admin;
+    private Button button_vendedor;
 
 
     @Override
@@ -25,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         button_Ingreso = (Button) findViewById(R.id.button_Ingreso);
         button_Ingreso.setOnClickListener(onClickListener);
 
+        button_admin= (Button) findViewById(R.id.button_admin);
+        button_admin.setOnClickListener(onClickListener);
+
+        button_vendedor= (Button) findViewById(R.id.button_vendedor);
+        button_vendedor.setOnClickListener(onClickListener);
+
     }
 
     private View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -35,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
 
             if (v == button_Ingreso)
                 button_Ingreso_OnClick();
+
+            if (v == button_admin)
+                button_Admin_OnClick();
+
+            if (v == button_vendedor)
+                button_Vendedor_OnClick();
         }
     };
 
@@ -46,6 +60,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void button_Ingreso_OnClick() {
         Intent intent = new Intent(MainActivity.this, Configuracion_Cuenta.class);
+        startActivity(intent);
+    }
+    private void button_Admin_OnClick() {
+        Intent intent = new Intent(MainActivity.this, ConfiguracionAdmin.class);
+        startActivity(intent);
+    }
+    private void button_Vendedor_OnClick() {
+        Intent intent = new Intent(MainActivity.this, ConfiguracionVendedor.class);
         startActivity(intent);
     }
 }
